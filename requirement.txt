@@ -1,0 +1,6 @@
+ipykernel==6.29.5
+matplotlib-inline==0.1.6
+pip==24.2
+torch==2.5.1
+torchvision
+torchinfo
