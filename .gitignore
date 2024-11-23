@@ -1,1 +1,7 @@
 /rubbish
+/datasets/*
+!/datasets/dataset.ipynb
+!/datasets/datasets.py
+!/datasets/__init__.py
+*.pth
+__pycache__

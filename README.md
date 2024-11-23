@@ -49,12 +49,18 @@ Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理�
 ## Quick Start
 
 
-
+## Feature
+- 开盒即用
+- 支持CUDA，兼容GPU 或者 CPU only的环境
+- 模型可视化
+- 训练可视化
+- 结果可视化
 
 ## 参考资料
 
 特别感谢以下开源项目对本仓库的支持和贡献：
 
+- [pyKAN](https://github.com/KindXiaoming/pykan)
 - [EfficientKAN](https://github.com/Blealtan/efficient-kan)
 - [JacobiKAN](https://github.com/SpaceLearner/JacobiKAN)
 - [TaylorKAN](https://github.com/Muyuzhierchengse/TaylorKAN/)
