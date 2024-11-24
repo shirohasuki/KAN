@@ -7,6 +7,7 @@ from .KAN.WaveletKAN import WaveletKANLinear
 from .MLP.MLP import MLPLinear
 from .CNN.Conv import ConvLinear
 from .Transformer.Transformer import TransformerLayer
+from .Frontend.PCALayer import PCALayer
 
 import torch
 import torch.nn as nn
@@ -50,7 +51,11 @@ class ModelManager:
     def TransformerLayer(self, embed_dim, num_heads, ff_dim, **kwargs):
         """调用 TransformerLayer 类"""
         return TransformerLayer(embed_dim=embed_dim, num_heads=num_heads, ff_dim=ff_dim, **kwargs)
-
+    
+    def PCALayer(self, input_dim, output_dim):
+        """调用 PCALayer 类"""
+        return PCALayer(input_dim=input_dim, output_dim=output_dim)
+    
     def list_methods(self):
         """列出所有可用的方法"""
         return [method for method in dir(self) if not method.startswith("_")]
@@ -72,7 +77,8 @@ if __name__ == "__main__":
         activation=nn.ReLU, use_batchnorm=True,\
     )
     transformer_layer = model_manager.TransformerLayer(embed_dim=64, num_heads=4, ff_dim=256)
-
+    pca_layer = model_manager.PCALayer(input_dim=5, output_dim=2)
+    
     # 列出所有注册的方法
     print("Available methods:", model_manager.list_methods())
 
@@ -86,3 +92,16 @@ if __name__ == "__main__":
     print("MLPLinear instance:", mlp_linear)
     print("ConvLinear instance:", conv_linear)
     print("TransformerLayer instance:", transformer_layer)
+    print("PCALayer instance:", pca_layer)
+
+
+    # 测试 PCALayer
+
+    # 打印实例
+    # print("PCALayer instance:", pca_layer)
+
+    # # 生成数据并测试 PCA
+    # x = torch.randn(100, 5)  # 100 个样本，5 个特征
+    # pca_layer.fit(x)  # 拟合 PCA
+    # x_reduced = pca_layer(x)  # 降维
+    # print("Reduced shape:", x_reduced.shape)
