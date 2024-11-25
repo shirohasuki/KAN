@@ -13,7 +13,7 @@ class DatasetManager:
         """
         self.batch_size = batch_size
         self.num_workers = num_workers
-        self.device = device or torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+        self.device = device or torch.device("cuda:7" if torch.cuda.is_available() else "cpu")
         print(f"Using device: {self.device}")
 
         # 获取当前脚本的目录作为路径基准

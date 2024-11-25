@@ -1,0 +1,108 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAKAN                                   [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 20,000
+│    └─SiLU: 2-1                         [128, 200]                --
+==========================================================================================
+Total params: 20,000
+Trainable params: 20,000
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.10
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.10
+==========================================================================================
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAKAN                                   [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 800
+│    └─SiLU: 2-1                         [128, 8]                  --
+==========================================================================================
+Total params: 800
+Trainable params: 800
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.00
+==========================================================================================
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200':
+ - PCAKAN200_2_checkpoint.pth
+ - PCAKAN200_1_checkpoint.pth
+ - PCAKAN200_5_checkpoint.pth
+ - PCAKAN200_3_checkpoint.pth
+ - PCAKAN200_4_checkpoint.pth
+Available .pth files:
+- PCAKAN200_2_checkpoint.pth
+- PCAKAN200_1_checkpoint.pth
+- PCAKAN200_5_checkpoint.pth
+- PCAKAN200_3_checkpoint.pth
+- PCAKAN200_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 8935/10000 (89%)
+
+Inference Time: 0.3477916717529297
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 8909/10000 (89%)
+
+Inference Time: 0.10145068168640137
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 8978/10000 (90%)
+
+Inference Time: 0.10340094566345215
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8889/10000 (89%)
+
+Inference Time: 0.10118913650512695
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8943/10000 (89%)
+
+Inference Time: 0.10223865509033203
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7':
+ - LDAKAN7_2_checkpoint.pth
+ - LDAKAN7_4_checkpoint.pth
+ - LDAKAN7_5_checkpoint.pth
+ - LDAKAN7_1_checkpoint.pth
+ - LDAKAN7_3_checkpoint.pth
+Available .pth files:
+- LDAKAN7_2_checkpoint.pth
+- LDAKAN7_4_checkpoint.pth
+- LDAKAN7_5_checkpoint.pth
+- LDAKAN7_1_checkpoint.pth
+- LDAKAN7_3_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7/LDAKAN7_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 8564/10000 (86%)
+
+Inference Time: 0.09841442108154297
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7/LDAKAN7_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8604/10000 (86%)
+
+Inference Time: 0.09877538681030273
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7/LDAKAN7_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 8645/10000 (86%)
+
+Inference Time: 0.09882187843322754
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7/LDAKAN7_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 8610/10000 (86%)
+
+Inference Time: 0.09856295585632324
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN7/LDAKAN7_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8580/10000 (86%)
+
+Inference Time: 0.09634065628051758

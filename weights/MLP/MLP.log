@@ -1,0 +1,59 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MLP                                      [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 10]                 --
+│    └─Sequential: 2-1                   [128, 10]                 --
+│    │    └─Linear: 3-1                  [128, 10]                 7,850
+==========================================================================================
+Total params: 7,850
+Trainable params: 7,850
+Non-trainable params: 0
+Total mult-adds (M): 1.00
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.01
+Params size (MB): 0.03
+Estimated Total Size (MB): 0.44
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.962546
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.506029
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.389899
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_1_checkpoint.pth
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/MLP':
+ - MLP_5_checkpoint.pth
+ - MLP_1_checkpoint.pth
+ - MLP_2_checkpoint.pth
+ - MLP_4_checkpoint.pth
+ - MLP_3_checkpoint.pth
+Available .pth files:
+- MLP_5_checkpoint.pth
+- MLP_1_checkpoint.pth
+- MLP_2_checkpoint.pth
+- MLP_4_checkpoint.pth
+- MLP_3_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9171/10000 (92%)
+
+Inference Time: 1.5147032737731934
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9139/10000 (91%)
+
+Inference Time: 1.2102906703948975
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9179/10000 (92%)
+
+Inference Time: 1.2049994468688965
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9176/10000 (92%)
+
+Inference Time: 1.7651917934417725
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLP/MLP_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9187/10000 (92%)
+
+Inference Time: 1.5443530082702637

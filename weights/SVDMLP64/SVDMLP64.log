@@ -1,0 +1,76 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAMLP                                   [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 10]                 --
+│    └─Sequential: 2-1                   [128, 10]                 --
+│    │    └─Linear: 3-1                  [128, 10]                 650
+==========================================================================================
+Total params: 650
+Trainable params: 650
+Non-trainable params: 0
+Total mult-adds (M): 0.08
+==========================================================================================
+Input size (MB): 0.03
+Forward/backward pass size (MB): 0.01
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.05
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 3.296940
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.615992
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.365139
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.399406
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.374105
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.401290
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.401623
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.400562
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.359294
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.365500
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.423655
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.397102
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.376080
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.326291
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.391237
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_5_checkpoint.pth
+Training Time: 42.75866460800171
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64':
+ - SVDMLP64_5_checkpoint.pth
+ - SVDMLP64_3_checkpoint.pth
+ - SVDMLP64_4_checkpoint.pth
+ - SVDMLP64_2_checkpoint.pth
+ - SVDMLP64_1_checkpoint.pth
+Available .pth files:
+- SVDMLP64_5_checkpoint.pth
+- SVDMLP64_3_checkpoint.pth
+- SVDMLP64_4_checkpoint.pth
+- SVDMLP64_2_checkpoint.pth
+- SVDMLP64_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0019, Accuracy: 3438/10000 (34%)
+
+Inference Time: 0.09208345413208008
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0019, Accuracy: 3504/10000 (35%)
+
+Inference Time: 0.05471301078796387
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0019, Accuracy: 3482/10000 (35%)
+
+Inference Time: 0.23145627975463867
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0019, Accuracy: 3495/10000 (35%)
+
+Inference Time: 0.054224252700805664
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDMLP64/SVDMLP64_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0019, Accuracy: 3440/10000 (34%)
+
+Inference Time: 0.05393862724304199

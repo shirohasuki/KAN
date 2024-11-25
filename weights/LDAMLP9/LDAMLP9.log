@@ -1,0 +1,112 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAKAN                                   [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 900
+│    └─SiLU: 2-1                         [128, 9]                  --
+==========================================================================================
+Total params: 900
+Trainable params: 900
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.00
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.00
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.804845
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.453303
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.437466
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.409158
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.439425
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.398410
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.414658
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.420505
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.392558
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.437592
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.422964
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.409438
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.412575
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.394284
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.425066
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_5_checkpoint.pth
+Training Time: 46.8288037776947
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9':
+ - LDAKAN9_1_checkpoint.pth
+ - LDAKAN9_5_checkpoint.pth
+ - LDAKAN9_4_checkpoint.pth
+ - LDAKAN9_2_checkpoint.pth
+ - LDAKAN9_3_checkpoint.pth
+Available .pth files:
+- LDAKAN9_1_checkpoint.pth
+- LDAKAN9_5_checkpoint.pth
+- LDAKAN9_4_checkpoint.pth
+- LDAKAN9_2_checkpoint.pth
+- LDAKAN9_3_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 8808/10000 (88%)
+
+Inference Time: 0.3227832317352295
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 8814/10000 (88%)
+
+Inference Time: 0.09730243682861328
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8777/10000 (88%)
+
+Inference Time: 0.09810686111450195
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 8772/10000 (88%)
+
+Inference Time: 0.09774327278137207
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAKAN9/LDAKAN9_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8783/10000 (88%)
+
+Inference Time: 0.09801054000854492
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9':
+ - LDAMLP9_4_checkpoint.pth
+ - LDAMLP9_3_checkpoint.pth
+ - LDAMLP9_5_checkpoint.pth
+ - LDAMLP9_2_checkpoint.pth
+ - LDAMLP9_1_checkpoint.pth
+Available .pth files:
+- LDAMLP9_4_checkpoint.pth
+- LDAMLP9_3_checkpoint.pth
+- LDAMLP9_5_checkpoint.pth
+- LDAMLP9_2_checkpoint.pth
+- LDAMLP9_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9/LDAMLP9_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8853/10000 (89%)
+
+Inference Time: 0.09431290626525879
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9/LDAMLP9_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8853/10000 (89%)
+
+Inference Time: 0.09494924545288086
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9/LDAMLP9_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 8843/10000 (88%)
+
+Inference Time: 0.09481954574584961
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9/LDAMLP9_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 8848/10000 (88%)
+
+Inference Time: 0.09526753425598145
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LDAMLP9/LDAMLP9_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 8854/10000 (89%)
+
+Inference Time: 0.3047969341278076

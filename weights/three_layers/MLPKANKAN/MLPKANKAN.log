@@ -1,0 +1,83 @@
+Train Epoch: 1 [0/60000 (0%)]	Loss: 0.219387
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.222990
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.220722
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MLPKANKAN                                [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 128]                --
+│    └─Sequential: 2-1                   [128, 128]                --
+│    │    └─Linear: 3-1                  [128, 128]                100,480
+├─KANLinear: 1-2                         [128, 32]                 40,960
+│    └─SiLU: 2-2                         [128, 128]                --
+├─KANLinear: 1-3                         [128, 10]                 3,200
+│    └─SiLU: 2-3                         [128, 32]                 --
+==========================================================================================
+Total params: 144,640
+Trainable params: 144,640
+Non-trainable params: 0
+Total mult-adds (M): 12.86
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.13
+Params size (MB): 0.40
+Estimated Total Size (MB): 0.93
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.863022
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.433726
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.399053
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.298032
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.292235
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.263993
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.221329
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.197232
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.200040
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.177636
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.172431
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.152703
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.157810
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.153990
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.143151
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_5_checkpoint.pth
+Training Time: 73.71804285049438
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN':
+ - MLPKANKAN_2_checkpoint.pth
+ - MLPKANKAN_1_checkpoint.pth
+ - MLPKANKAN_3_checkpoint.pth
+ - MLPKANKAN_5_checkpoint.pth
+ - MLPKANKAN_4_checkpoint.pth
+Available .pth files:
+- MLPKANKAN_2_checkpoint.pth
+- MLPKANKAN_1_checkpoint.pth
+- MLPKANKAN_3_checkpoint.pth
+- MLPKANKAN_5_checkpoint.pth
+- MLPKANKAN_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9433/10000 (94%)
+
+Inference Time: 1.4899616241455078
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9221/10000 (92%)
+
+Inference Time: 1.5649924278259277
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9543/10000 (95%)
+
+Inference Time: 1.5481863021850586
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9635/10000 (96%)
+
+Inference Time: 1.5368657112121582
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPKANKAN/MLPKANKAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9605/10000 (96%)
+
+Inference Time: 1.5283653736114502

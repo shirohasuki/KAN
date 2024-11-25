@@ -1,0 +1,39 @@
+Train Epoch: 1 [0/60000 (0%)]	Loss: 0.048853
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.068042
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP':
+ - CNNMLP_5_checkpoint.pth
+ - CNNMLP_3_checkpoint.pth
+ - CNNMLP_4_checkpoint.pth
+ - CNNMLP_2_checkpoint.pth
+ - CNNMLP_1_checkpoint.pth
+Available .pth files:
+- CNNMLP_5_checkpoint.pth
+- CNNMLP_3_checkpoint.pth
+- CNNMLP_4_checkpoint.pth
+- CNNMLP_2_checkpoint.pth
+- CNNMLP_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0000, Accuracy: 9875/10000 (99%)
+
+Inference Time: 1.601334810256958
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0000, Accuracy: 9879/10000 (99%)
+
+Inference Time: 1.4822688102722168
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0005, Accuracy: 7518/10000 (75%)
+
+Inference Time: 1.6135485172271729
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0000, Accuracy: 9887/10000 (99%)
+
+Inference Time: 1.6377227306365967
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0000, Accuracy: 9857/10000 (99%)
+
+Inference Time: 1.630079746246338

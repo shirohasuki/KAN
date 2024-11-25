@@ -1,0 +1,89 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+CNNMLP                                   [128, 10]                 --
+├─ConvLinear: 1-1                        [128, 16, 14, 14]         --
+│    └─Conv2d: 2-1                       [128, 16, 28, 28]         160
+│    └─BatchNorm2d: 2-2                  [128, 16, 28, 28]         32
+│    └─ReLU: 2-3                         [128, 16, 28, 28]         --
+│    └─MaxPool2d: 2-4                    [128, 16, 14, 14]         --
+├─ConvLinear: 1-2                        [128, 32, 7, 7]           --
+│    └─Conv2d: 2-5                       [128, 32, 14, 14]         4,640
+│    └─BatchNorm2d: 2-6                  [128, 32, 14, 14]         64
+│    └─ReLU: 2-7                         [128, 32, 14, 14]         --
+│    └─MaxPool2d: 2-8                    [128, 32, 7, 7]           --
+├─MLPLinear: 1-3                         [128, 128]                --
+│    └─Sequential: 2-9                   [128, 128]                --
+│    │    └─Linear: 3-1                  [128, 128]                200,832
+├─MLPLinear: 1-4                         [128, 10]                 --
+│    └─Sequential: 2-10                  [128, 10]                 --
+│    │    └─Linear: 3-2                  [128, 10]                 1,290
+==========================================================================================
+Total params: 207,018
+Trainable params: 207,018
+Non-trainable params: 0
+Total mult-adds (M): 158.35
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 38.68
+Params size (MB): 0.83
+Estimated Total Size (MB): 39.91
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.683597
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.084901
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.077496
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.066774
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.060045
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.057913
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 6.984773
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.068885
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 1.144046
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.139875
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.112829
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.066778
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.067204
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.046775
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.039247
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_5_checkpoint.pth
+Training Time: 88.96839237213135
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP':
+ - CNNMLP_5_checkpoint.pth
+ - CNNMLP_3_checkpoint.pth
+ - CNNMLP_4_checkpoint.pth
+ - CNNMLP_2_checkpoint.pth
+ - CNNMLP_1_checkpoint.pth
+Available .pth files:
+- CNNMLP_5_checkpoint.pth
+- CNNMLP_3_checkpoint.pth
+- CNNMLP_4_checkpoint.pth
+- CNNMLP_2_checkpoint.pth
+- CNNMLP_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0000, Accuracy: 9877/10000 (99%)
+
+Inference Time: 1.4385883808135986
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9456/10000 (95%)
+
+Inference Time: 1.6104674339294434
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0000, Accuracy: 9744/10000 (97%)
+
+Inference Time: 1.597672939300537
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0067, Accuracy: 1615/10000 (16%)
+
+Inference Time: 1.2888908386230469
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNMLP/CNNMLP_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0000, Accuracy: 9836/10000 (98%)
+
+Inference Time: 1.5804448127746582

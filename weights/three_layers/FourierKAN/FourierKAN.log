@@ -1,0 +1,80 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+FourierKAN                               [128, 10]                 --
+├─FourierKANLinear: 1-1                  [128, 128]                2,107,520
+│    └─SiLU: 2-1                         [128, 784]                --
+├─FourierKANLinear: 1-2                  [128, 10]                 26,890
+│    └─SiLU: 2-2                         [128, 128]                --
+==========================================================================================
+Total params: 2,134,410
+Trainable params: 2,134,410
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.973216
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 3.203782
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 3.022161
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/FourierKAN/FourierKAN_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 2.593736
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 2.855576
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 165.323578
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/FourierKAN/FourierKAN_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 9.143986
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 32.730778
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 8.543797
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/FourierKAN/FourierKAN_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 5.383740
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 4.523010
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 2.277473
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/FourierKAN/FourierKAN_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 2.777040
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 2.352154
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 2.225647
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/FourierKAN/FourierKAN_5_checkpoint.pth
+Training Time: 228.74700927734375
+
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/KAN':
+ - KAN_5_checkpoint.pth
+ - KAN_4_checkpoint.pth
+ - KAN_2_checkpoint.pth
+ - KAN_3_checkpoint.pth
+ - KAN_1_checkpoint.pth
+Available .pth files:
+- KAN_5_checkpoint.pth
+- KAN_4_checkpoint.pth
+- KAN_2_checkpoint.pth
+- KAN_3_checkpoint.pth
+- KAN_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KAN/KAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9674/10000 (97%)
+
+Inference Time: 1.3889164924621582
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KAN/KAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9653/10000 (97%)
+
+Inference Time: 1.3867521286010742
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KAN/KAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9588/10000 (96%)
+
+Inference Time: 1.386054277420044
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KAN/KAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9648/10000 (96%)
+
+Inference Time: 1.396174430847168
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KAN/KAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9394/10000 (94%)
+
+Inference Time: 1.330049991607666
+

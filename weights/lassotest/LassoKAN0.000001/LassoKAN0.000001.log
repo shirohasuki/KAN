@@ -1,0 +1,54 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+KAN                                      [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 78,400
+│    └─SiLU: 2-1                         [128, 784]                --
+==========================================================================================
+Total params: 78,400
+Trainable params: 78,400
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001':
+ - LassoKAN0.000001_3_checkpoint.pth
+ - LassoKAN0.000001_2_checkpoint.pth
+ - LassoKAN0.000001_1_checkpoint.pth
+ - LassoKAN0.000001_4_checkpoint.pth
+ - LassoKAN0.000001_5_checkpoint.pth
+Available .pth files:
+- LassoKAN0.000001_3_checkpoint.pth
+- LassoKAN0.000001_2_checkpoint.pth
+- LassoKAN0.000001_1_checkpoint.pth
+- LassoKAN0.000001_4_checkpoint.pth
+- LassoKAN0.000001_5_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001/LassoKAN0.000001_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9198/10000 (92%)
+
+Inference Time: 1.2624449729919434
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001/LassoKAN0.000001_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9207/10000 (92%)
+
+Inference Time: 1.2680509090423584
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001/LassoKAN0.000001_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9172/10000 (92%)
+
+Inference Time: 1.5441842079162598
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001/LassoKAN0.000001_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9230/10000 (92%)
+
+Inference Time: 1.5559136867523193
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.000001/LassoKAN0.000001_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9234/10000 (92%)
+
+Inference Time: 1.2703959941864014

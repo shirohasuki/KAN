@@ -1,0 +1,77 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+TaylorKAN                                [128, 10]                 --
+├─TaylorKANLinear: 1-1                   [128, 128]                401,536
+│    └─SiLU: 2-1                         [128, 784]                --
+├─TaylorKANLinear: 1-2                   [128, 10]                 5,130
+│    └─SiLU: 2-2                         [128, 128]                --
+==========================================================================================
+Total params: 406,666
+Trainable params: 406,666
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.255655
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.486062
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.413031
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.345752
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.348699
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.341264
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.306557
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.259534
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.267690
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.262628
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.258098
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.243004
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.224263
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.237830
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.210475
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_5_checkpoint.pth
+Training Time: 90.4194438457489
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN':
+ - TaylorKAN_5_checkpoint.pth
+ - TaylorKAN_1_checkpoint.pth
+ - TaylorKAN_2_checkpoint.pth
+ - TaylorKAN_3_checkpoint.pth
+ - TaylorKAN_4_checkpoint.pth
+Available .pth files:
+- TaylorKAN_5_checkpoint.pth
+- TaylorKAN_1_checkpoint.pth
+- TaylorKAN_2_checkpoint.pth
+- TaylorKAN_3_checkpoint.pth
+- TaylorKAN_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9464/10000 (95%)
+
+Inference Time: 1.4266653060913086
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9129/10000 (91%)
+
+Inference Time: 1.4690876007080078
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9294/10000 (93%)
+
+Inference Time: 1.4329040050506592
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9378/10000 (94%)
+
+Inference Time: 1.579460859298706
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/TaylorKAN/TaylorKAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9428/10000 (94%)
+
+Inference Time: 1.523771047592163

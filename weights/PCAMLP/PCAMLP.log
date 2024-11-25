@@ -1,0 +1,55 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAKAN                                   [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 12,800
+│    └─SiLU: 2-1                         [128, 128]                --
+==========================================================================================
+Total params: 12,800
+Trainable params: 12,800
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.07
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.07
+==========================================================================================
+
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP':
+ - PCAMLP_2_checkpoint.pth
+ - PCAMLP_5_checkpoint.pth
+ - PCAMLP_1_checkpoint.pth
+ - PCAMLP_3_checkpoint.pth
+ - PCAMLP_4_checkpoint.pth
+Available .pth files:
+- PCAMLP_2_checkpoint.pth
+- PCAMLP_5_checkpoint.pth
+- PCAMLP_1_checkpoint.pth
+- PCAMLP_3_checkpoint.pth
+- PCAMLP_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP/PCAMLP_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 9027/10000 (90%)
+
+Inference Time: 0.09750175476074219
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP/PCAMLP_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 9045/10000 (90%)
+
+Inference Time: 0.09685611724853516
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP/PCAMLP_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 9039/10000 (90%)
+
+Inference Time: 0.09610915184020996
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP/PCAMLP_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8997/10000 (90%)
+
+Inference Time: 0.09588074684143066
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP/PCAMLP_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 9035/10000 (90%)
+
+Inference Time: 0.28206658363342285

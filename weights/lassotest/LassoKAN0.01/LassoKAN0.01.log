@@ -1,0 +1,75 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+KAN                                      [128, 10]                 --
+├─KANLinear: 1-1                         [128, 10]                 78,400
+│    └─SiLU: 2-1                         [128, 784]                --
+==========================================================================================
+Total params: 78,400
+Trainable params: 78,400
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 7.960003
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 3.216854
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 2.896139
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 2.812398
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 2.760963
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 2.748096
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 2.753887
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 2.744081
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 2.741889
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 2.743109
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 2.747866
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 2.742114
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 2.754077
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 2.742661
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 2.724977
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_5_checkpoint.pth
+Training Time: 55.60686922073364
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01':
+ - LassoKAN0.01_3_checkpoint.pth
+ - LassoKAN0.01_2_checkpoint.pth
+ - LassoKAN0.01_5_checkpoint.pth
+ - LassoKAN0.01_1_checkpoint.pth
+ - LassoKAN0.01_4_checkpoint.pth
+Available .pth files:
+- LassoKAN0.01_3_checkpoint.pth
+- LassoKAN0.01_2_checkpoint.pth
+- LassoKAN0.01_5_checkpoint.pth
+- LassoKAN0.01_1_checkpoint.pth
+- LassoKAN0.01_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0007, Accuracy: 7590/10000 (76%)
+
+Inference Time: 1.257016658782959
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0007, Accuracy: 7589/10000 (76%)
+
+Inference Time: 1.2461607456207275
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0007, Accuracy: 7596/10000 (76%)
+
+Inference Time: 1.218874216079712
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0007, Accuracy: 7589/10000 (76%)
+
+Inference Time: 1.0311505794525146
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/LassoKAN0.01/LassoKAN0.01_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0007, Accuracy: 7589/10000 (76%)
+
+Inference Time: 1.2223608493804932

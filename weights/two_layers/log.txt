@@ -1,0 +1,23 @@
+MLP
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/test/test_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0028, Accuracy: 8976/10000 (90%)
+
+
+CNN
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/test/test_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0010, Accuracy: 9675/10000 (97%)
+
+Transformer
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/test/test_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0093, Accuracy: 6007/10000 (60%)
+
+
+FourierKAN
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/test/test_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0479, Accuracy: 7915/10000 (79%)
+
+

@@ -1,0 +1,55 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAMLP                                   [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 10]                 --
+│    └─Sequential: 2-1                   [128, 10]                 --
+│    │    └─Linear: 3-1                  [128, 10]                 2,010
+==========================================================================================
+Total params: 2,010
+Trainable params: 2,010
+Non-trainable params: 0
+Total mult-adds (M): 0.26
+==========================================================================================
+Input size (MB): 0.10
+Forward/backward pass size (MB): 0.01
+Params size (MB): 0.01
+Estimated Total Size (MB): 0.12
+==========================================================================================
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200':
+ - PCAKAN200_2_checkpoint.pth
+ - PCAKAN200_1_checkpoint.pth
+ - PCAKAN200_5_checkpoint.pth
+ - PCAKAN200_3_checkpoint.pth
+ - PCAKAN200_4_checkpoint.pth
+Available .pth files:
+- PCAKAN200_2_checkpoint.pth
+- PCAKAN200_1_checkpoint.pth
+- PCAKAN200_5_checkpoint.pth
+- PCAKAN200_3_checkpoint.pth
+- PCAKAN200_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 8935/10000 (89%)
+
+Inference Time: 0.10802769660949707
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 8909/10000 (89%)
+
+Inference Time: 0.10236978530883789
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 8978/10000 (90%)
+
+Inference Time: 0.10336160659790039
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 8889/10000 (89%)
+
+Inference Time: 0.1029653549194336
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAKAN200/PCAKAN200_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8943/10000 (89%)
+
+Inference Time: 0.10082817077636719

@@ -1,0 +1,76 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+PCAMLP                                   [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 10]                 --
+│    └─Sequential: 2-1                   [128, 10]                 --
+│    │    └─Linear: 3-1                  [128, 10]                 2,010
+==========================================================================================
+Total params: 2,010
+Trainable params: 2,010
+Non-trainable params: 0
+Total mult-adds (M): 0.26
+==========================================================================================
+Input size (MB): 0.10
+Forward/backward pass size (MB): 0.01
+Params size (MB): 0.01
+Estimated Total Size (MB): 0.12
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.771163
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.470356
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.335604
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.353304
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.340508
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.325279
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.303592
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.285653
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.396905
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.341927
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.340581
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.337806
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.332182
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.320778
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.358086
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_5_checkpoint.pth
+Training Time: 46.02010893821716
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200':
+ - PCAMLP200_1_checkpoint.pth
+ - PCAMLP200_5_checkpoint.pth
+ - PCAMLP200_3_checkpoint.pth
+ - PCAMLP200_4_checkpoint.pth
+ - PCAMLP200_2_checkpoint.pth
+Available .pth files:
+- PCAMLP200_1_checkpoint.pth
+- PCAMLP200_5_checkpoint.pth
+- PCAMLP200_3_checkpoint.pth
+- PCAMLP200_4_checkpoint.pth
+- PCAMLP200_2_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 9025/10000 (90%)
+
+Inference Time: 0.06128573417663574
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0002, Accuracy: 9037/10000 (90%)
+
+Inference Time: 0.08740901947021484
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0002, Accuracy: 9028/10000 (90%)
+
+Inference Time: 0.21405839920043945
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0002, Accuracy: 8997/10000 (90%)
+
+Inference Time: 0.05786490440368652
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/PCAMLP200/PCAMLP200_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0002, Accuracy: 9054/10000 (91%)
+
+Inference Time: 0.05713939666748047
