@@ -1,6 +1,12 @@
 ipykernel==6.29.5
-matplotlib-inline==0.1.6
+matplotlib
 pip==24.2
 torch==2.5.1
 torchvision
 torchinfo
+scikit_learn==1.1.3
+setuptools==65.5.0
+sympy==1.11.1
+tqdm==4.66.2
+pyyaml
+pandas

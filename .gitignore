@@ -1,5 +1,7 @@
 /rubbish
 /datasets/*
+/demo/*
+!/demo/demo.ipynb
 !/datasets/dataset.ipynb
 !/datasets/datasets.py
 !/datasets/__init__.py

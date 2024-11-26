@@ -74,7 +74,6 @@ if __name__ == "__main__":
         activation=nn.ReLU, use_batchnorm=True,\
     )
     transformer_layer = model_manager.TransformerLayer(embed_dim=64, num_heads=4, ff_dim=256)
-    pca_layer = model_manager.PCALayer(input_dim=5, output_dim=2)
     
     # 列出所有注册的方法
     print("Available methods:", model_manager.list_methods())

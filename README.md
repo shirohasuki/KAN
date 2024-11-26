@@ -1,52 +1,26 @@
-# KAN
+# KAN Playground
 
-本仓库收集并整理了多种基于 Kolmogorov-Arnold 网络（KAN）的高效实现，包括 FourierKAN、ChebyKAN、JacobiKAN、TaylorKAN 和 WaveletKAN 等。这些实现旨在提供对不同类型 KAN 模型的深入理解和便捷使用。为了方便观看、阅读和修改，本人基于大量仓库的写法对变种 KAN 进行重构。
-
+本仓库模块化的实现了多种基于 Kolmogorov-Arnold 网络（KAN）的高效实现。这些实现旨在提供对不同类型 KAN 模型的深入理解和便捷使用。为了方便观看、阅读和修改，本人基于大量仓库的写法对变种 KAN 进行重构。
 
 ## 简介
 
-Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理的神经网络架构，具有强大的非线性表达能力。本仓库对多种 KAN 的变体进行了实现，包括使用不同基函数（如傅里叶级数、Chebyshev 多项式、Jacobi 多项式、泰勒级数和小波变换）的方法。
-
-## 实现
-
-### KAN
-
-基础的 KAN 实现，使用了 B 样条作为基函数，提供了对 KAN 模型的基本理解。
-
-- 源代码：[KAN.py](KAN.py)
-
-### FourierKAN
-
-使用傅里叶级数作为基函数的 KAN 实现，能够捕捉输入数据的周期性特征。
-
-- 源代码：[FourierKAN.py](FourierKAN.py)
-
-### ChebyKAN
-
-使用 Chebyshev 多项式作为基函数的 KAN 实现，具有良好的数值稳定性和逼近能力。
-
-- 源代码：[ChebyKAN.py](ChebyKAN.py)
-
-### JacobiKAN
-
-使用 Jacobi 多项式作为基函数的 KAN 实现，通过调整参数 \( a \) 和 \( b \)，可以灵活地适应不同的数据分布。
-
-- 源代码：[JacobiKAN.py](JacobiKAN.py)
-
-### TaylorKAN
-
-使用泰勒级数展开作为基函数的 KAN 实现，适用于需要高阶非线性特征的任务。
-
-- 源代码：[TaylorKAN.py](TaylorKAN.py)
-
-### WaveletKAN
-
-使用小波变换作为基函数的 KAN 实现，能够捕捉数据的局部特征或频域特征。
-
-- 源代码：[WaveletKAN.py](WaveletKAN.py)
-
+Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理的神经网络架构，具有强大的非线性表达能力。本仓库对多种 KAN 的改进进行了实现，包括使用不同的损失函数，激活函数，基函数，。
 
 ## Quick Start
+
+Step 1. 下载仓库代码
+```
+git clone https://github.com/shirohasuki/KAN.git
+```
+
+Step 2. 安装环境依赖
+
+创建你的conda环境，并执行安装所需的对应包
+```
+pip install -r requirements.txt
+```
+
+Step 3. 点击运行可交互的[demo文件](https://github.com/shirohasuki/KAN/blob/master/demo/demo.ipynb)或[experiments_with_print](https://github.com/shirohasuki/KAN/blob/master/demo/experiments_with_print/)的实验脚本
 
 
 ## Feature
@@ -55,6 +29,16 @@ Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理�
 - 模型可视化
 - 训练可视化
 - 结果可视化
+
+## 目前实验中的可调节模块
+- 网络结构变换：MLP，CNN，Transformer
+- 预处理：PCA，LDA，SVD
+- 损失函数：交叉熵，带正则化的交叉熵
+- 基函数：B样条，傅里叶级数，切比雪夫多项式，雅可比多项式，泰勒级数展开，小波变换
+- 激活函数：SiLU，ReLU，GELU，Mish
+- 优化器：LBFGS，Adam，SGD
+
+
 
 ## 参考资料
 
