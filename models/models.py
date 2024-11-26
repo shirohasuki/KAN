@@ -7,7 +7,7 @@ from .KAN.WaveletKAN import WaveletKANLinear
 from .MLP.MLP import MLPLinear
 from .CNN.Conv import ConvLinear
 from .Transformer.Transformer import TransformerLayer
-from .Frontend.PCALayer import PCALayer
+# from .Frontend.PCALayer import PCALayer
 
 import torch
 import torch.nn as nn
