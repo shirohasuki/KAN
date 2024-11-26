@@ -4,7 +4,7 @@
 
 ## 简介
 
-Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理的神经网络架构，具有强大的非线性表达能力。本仓库对多种 KAN 的改进进行了实现，包括使用不同的损失函数，激活函数，基函数，。
+Kolmogorov-Arnold 网络（KAN）是一类基于 Kolmogorov-Arnold 表示定理的神经网络架构，具有强大的非线性表达能力。本仓库对多种 KAN 的改进进行了实现，包括使用不同的网络结构，损失函数，激活函数，基函数等。
 
 ## Quick Start
 
