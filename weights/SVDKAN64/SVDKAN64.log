@@ -111,3 +111,61 @@ Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/SVDKAN64/SVDKAN64_1_c
 Test set: Average loss: 0.0017, Accuracy: 3123/10000 (31%)
 
 Inference Time: 0.09883666038513184
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.266851
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.099406
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.064379
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.041182
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.062607
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.117619
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.043259
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.081664
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.042943
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.038018
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.047032
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.035395
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.030677
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.046668
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.046545
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_5_checkpoint.pth
+Training Time: 149.83426451683044
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN':
+ - CNNKAN_2_checkpoint.pth
+ - CNNKAN_5_checkpoint.pth
+ - CNNKAN_4_checkpoint.pth
+ - CNNKAN_1_checkpoint.pth
+ - CNNKAN_3_checkpoint.pth
+Available .pth files:
+- CNNKAN_2_checkpoint.pth
+- CNNKAN_5_checkpoint.pth
+- CNNKAN_4_checkpoint.pth
+- CNNKAN_1_checkpoint.pth
+- CNNKAN_3_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0000, Accuracy: 9862/10000 (99%)
+
+Inference Time: 1.3544723987579346
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0000, Accuracy: 9891/10000 (99%)
+
+Inference Time: 1.4594459533691406
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0000, Accuracy: 9895/10000 (99%)
+
+Inference Time: 1.399162769317627
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0000, Accuracy: 9855/10000 (99%)
+
+Inference Time: 1.4422080516815186
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/CNNKAN/CNNKAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0000, Accuracy: 9872/10000 (99%)
+
+Inference Time: 1.419975757598877

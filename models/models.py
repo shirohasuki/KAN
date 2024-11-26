@@ -51,10 +51,7 @@ class ModelManager:
     def TransformerLayer(self, embed_dim, num_heads, ff_dim, **kwargs):
         """调用 TransformerLayer 类"""
         return TransformerLayer(embed_dim=embed_dim, num_heads=num_heads, ff_dim=ff_dim, **kwargs)
-    
-    def PCALayer(self, input_dim, output_dim):
-        """调用 PCALayer 类"""
-        return PCALayer(input_dim=input_dim, output_dim=output_dim)
+
     
     def list_methods(self):
         """列出所有可用的方法"""

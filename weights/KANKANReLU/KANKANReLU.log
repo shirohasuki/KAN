@@ -1,0 +1,77 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+KANKANReLU                               [128, 10]                 --
+├─KANLinear: 1-1                         [128, 32]                 250,880
+│    └─ReLU: 2-1                         [128, 784]                --
+├─KANLinear: 1-2                         [128, 10]                 3,200
+│    └─ReLU: 2-2                         [128, 32]                 --
+==========================================================================================
+Total params: 254,080
+Trainable params: 254,080
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.151016
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.610336
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.461266
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.416667
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.327383
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.305580
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.255831
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.252209
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.260792
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.232595
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.201181
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.220115
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.189765
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.190885
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.149403
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_5_checkpoint.pth
+Training Time: 40.24518036842346
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU':
+ - KANKANReLU_5_checkpoint.pth
+ - KANKANReLU_1_checkpoint.pth
+ - KANKANReLU_2_checkpoint.pth
+ - KANKANReLU_3_checkpoint.pth
+ - KANKANReLU_4_checkpoint.pth
+Available .pth files:
+- KANKANReLU_5_checkpoint.pth
+- KANKANReLU_1_checkpoint.pth
+- KANKANReLU_2_checkpoint.pth
+- KANKANReLU_3_checkpoint.pth
+- KANKANReLU_4_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9549/10000 (95%)
+
+Inference Time: 1.23988938331604
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0002, Accuracy: 9043/10000 (90%)
+
+Inference Time: 1.2240219116210938
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9280/10000 (93%)
+
+Inference Time: 1.1855924129486084
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9386/10000 (94%)
+
+Inference Time: 1.2238538265228271
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/KANKANReLU/KANKANReLU_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9500/10000 (95%)
+
+Inference Time: 1.2475974559783936

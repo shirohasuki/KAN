@@ -1,0 +1,82 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+MLPMLPMLP                                [128, 10]                 --
+├─MLPLinear: 1-1                         [128, 128]                --
+│    └─Sequential: 2-1                   [128, 128]                --
+│    │    └─Linear: 3-1                  [128, 128]                100,480
+├─MLPLinear: 1-2                         [128, 32]                 --
+│    └─Sequential: 2-2                   [128, 32]                 --
+│    │    └─Linear: 3-2                  [128, 32]                 4,128
+├─MLPLinear: 1-3                         [128, 10]                 --
+│    └─Sequential: 2-3                   [128, 10]                 --
+│    │    └─Linear: 3-3                  [128, 10]                 330
+==========================================================================================
+Total params: 104,938
+Trainable params: 104,938
+Non-trainable params: 0
+Total mult-adds (M): 13.43
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.17
+Params size (MB): 0.42
+Estimated Total Size (MB): 1.00
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 1.483001
+Train Epoch: 1 [20480/60000 (33%)]	Loss: 0.385263
+Train Epoch: 1 [40960/60000 (67%)]	Loss: 0.327819
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: 0.387935
+Train Epoch: 2 [20480/60000 (33%)]	Loss: 0.325258
+Train Epoch: 2 [40960/60000 (67%)]	Loss: 0.344137
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: 0.355849
+Train Epoch: 3 [20480/60000 (33%)]	Loss: 0.365210
+Train Epoch: 3 [40960/60000 (67%)]	Loss: 0.366414
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: 0.327210
+Train Epoch: 4 [20480/60000 (33%)]	Loss: 0.325513
+Train Epoch: 4 [40960/60000 (67%)]	Loss: 0.337258
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: 0.352577
+Train Epoch: 5 [20480/60000 (33%)]	Loss: 0.311457
+Train Epoch: 5 [40960/60000 (67%)]	Loss: 0.349292
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_5_checkpoint.pth
+Training Time: 58.46866273880005
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP':
+ - MLPMLPMLP_4_checkpoint.pth
+ - MLPMLPMLP_3_checkpoint.pth
+ - MLPMLPMLP_5_checkpoint.pth
+ - MLPMLPMLP_2_checkpoint.pth
+ - MLPMLPMLP_1_checkpoint.pth
+Available .pth files:
+- MLPMLPMLP_4_checkpoint.pth
+- MLPMLPMLP_3_checkpoint.pth
+- MLPMLPMLP_5_checkpoint.pth
+- MLPMLPMLP_2_checkpoint.pth
+- MLPMLPMLP_1_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: 0.0001, Accuracy: 9180/10000 (92%)
+
+Inference Time: 1.2641403675079346
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: 0.0001, Accuracy: 9182/10000 (92%)
+
+Inference Time: 1.273395299911499
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: 0.0001, Accuracy: 9158/10000 (92%)
+
+Inference Time: 1.268589973449707
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: 0.0001, Accuracy: 9136/10000 (91%)
+
+Inference Time: 1.1447365283966064
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/MLPMLPMLP/MLPMLPMLP_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: 0.0001, Accuracy: 9156/10000 (92%)
+
+Inference Time: 1.3064563274383545

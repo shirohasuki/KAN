@@ -1,0 +1,137 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+JacobiKAN                                [128, 10]                 --
+├─JacobiKANLinear: 1-1                   [128, 128]                702,592
+│    └─SiLU: 2-1                         [128, 784]                --
+├─JacobiKANLinear: 1-2                   [128, 10]                 8,970
+│    └─SiLU: 2-2                         [128, 128]                --
+==========================================================================================
+Total params: 711,562
+Trainable params: 711,562
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Found 1 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/JacobiKAN':
+ - JacobiKAN_1_checkpoint.pth
+Available .pth files:
+- JacobiKAN_1_checkpoint.pth
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN':
+ - ChebyKAN_2_checkpoint.pth
+ - ChebyKAN_1_checkpoint.pth
+ - ChebyKAN_3_checkpoint.pth
+ - ChebyKAN_4_checkpoint.pth
+ - ChebyKAN_5_checkpoint.pth
+Available .pth files:
+- ChebyKAN_2_checkpoint.pth
+- ChebyKAN_1_checkpoint.pth
+- ChebyKAN_3_checkpoint.pth
+- ChebyKAN_4_checkpoint.pth
+- ChebyKAN_5_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.5046238899230957
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.4370484352111816
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.4222204685211182
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.4221751689910889
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.394221305847168
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+ChebyKAN                                 [128, 10]                 --
+├─ChebyKANLinear: 1-1                    [128, 128]                702,592
+│    └─SiLU: 2-1                         [128, 784]                --
+├─ChebyKANLinear: 1-2                    [128, 10]                 8,970
+│    └─SiLU: 2-2                         [128, 128]                --
+==========================================================================================
+Total params: 711,562
+Trainable params: 711,562
+Non-trainable params: 0
+Total mult-adds (M): 0
+==========================================================================================
+Input size (MB): 0.40
+Forward/backward pass size (MB): 0.00
+Params size (MB): 0.00
+Estimated Total Size (MB): 0.40
+==========================================================================================
+Train Epoch: 1 [0/60000 (0%)]	Loss: 2.419832
+Train Epoch: 1 [20480/60000 (33%)]	Loss: nan
+Train Epoch: 1 [40960/60000 (67%)]	Loss: nan
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_1_checkpoint.pth
+Train Epoch: 2 [0/60000 (0%)]	Loss: nan
+Train Epoch: 2 [20480/60000 (33%)]	Loss: nan
+Train Epoch: 2 [40960/60000 (67%)]	Loss: nan
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_2_checkpoint.pth
+Train Epoch: 3 [0/60000 (0%)]	Loss: nan
+Train Epoch: 3 [20480/60000 (33%)]	Loss: nan
+Train Epoch: 3 [40960/60000 (67%)]	Loss: nan
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_3_checkpoint.pth
+Train Epoch: 4 [0/60000 (0%)]	Loss: nan
+Train Epoch: 4 [20480/60000 (33%)]	Loss: nan
+Train Epoch: 4 [40960/60000 (67%)]	Loss: nan
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_4_checkpoint.pth
+Train Epoch: 5 [0/60000 (0%)]	Loss: nan
+Train Epoch: 5 [20480/60000 (33%)]	Loss: nan
+Train Epoch: 5 [40960/60000 (67%)]	Loss: nan
+Model saved to /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_5_checkpoint.pth
+Training Time: 41.563002586364746
+Found 5 .pth file(s) in '/home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN':
+ - ChebyKAN_2_checkpoint.pth
+ - ChebyKAN_1_checkpoint.pth
+ - ChebyKAN_3_checkpoint.pth
+ - ChebyKAN_4_checkpoint.pth
+ - ChebyKAN_5_checkpoint.pth
+Available .pth files:
+- ChebyKAN_2_checkpoint.pth
+- ChebyKAN_1_checkpoint.pth
+- ChebyKAN_3_checkpoint.pth
+- ChebyKAN_4_checkpoint.pth
+- ChebyKAN_5_checkpoint.pth
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_2_checkpoint.pth, starting from epoch 2
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.2102961540222168
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_1_checkpoint.pth, starting from epoch 1
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.3728318214416504
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_3_checkpoint.pth, starting from epoch 3
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.4299850463867188
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_4_checkpoint.pth, starting from epoch 4
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.409198522567749
+Model loaded from /home/jzgrp/huiwang/mio/Code/KAN/weights/ChebyKAN/ChebyKAN_5_checkpoint.pth, starting from epoch 5
+
+Test set: Average loss: nan, Accuracy: 980/10000 (10%)
+
+Inference Time: 1.1327335834503174
