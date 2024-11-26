@@ -20,7 +20,7 @@ Step 2. 安装环境依赖
 pip install -r requirements.txt
 ```
 
-Step 3. 点击运行可交互的[demo文件](https://github.com/shirohasuki/KAN/blob/master/demo/demo.ipynb)或[experiments_with_print](https://github.com/shirohasuki/KAN/blob/master/demo/experiments_with_print/)的实验脚本
+Step 3. 点击运行可交互的[demo文件](https://github.com/shirohasuki/KAN/blob/master/demo/demo.ipynb)或[experiments_with_print](https://github.com/shirohasuki/KAN/blob/master/experiments/experiments_with_print/)的实验脚本
 
 
 ## Feature
